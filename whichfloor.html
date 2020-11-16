@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var maximum_stories =100;
+    var userstring = prompt("On what floor of the building is your office");
+    var usernum = parseInt(userstring, 10);
+
+    while (usernum > maximum_stories) {
+      console.log("You entered:  " + usernum +" but there are only " + maximum_stories + " floors in the building try agin...");
+      var userstring = prompt("You entered:  " + usernum +" but there are only " + maximum_stories + " floors in the building try agin...");
+      var usernum = parseInt(userstring, 10);
+      }
+      console.log("Congrats! Your work on: " + usernum);
+    </script>
+  </body>
+</html>
